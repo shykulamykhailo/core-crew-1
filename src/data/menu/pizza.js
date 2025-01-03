@@ -1,8 +1,17 @@
+import pizzaStracietella from './pizza-straccietella.jpg';
+import pizzaAsparagus from './pizza-asparagus.jpg';
+import pizzaFigs from './pizza-figs-and-prosciutto.jpg';
+import pizzaFungi from './pizza-fungi.jpg';
+import pizzaMargherita from './pizza-margherita.jpg';
+import pizzaNduja from './pizza-nduja.jpg';
+import pizzaProsciutto from './pizza-prosciutto.jpg';
+import pizzaCalzone from './pizza-calzone.jpg';
+
 export const PIZZAS_LIST = [
     {
         name: 'Pizza Margherita',
         price: 4.0,
-        photo: 'src/data/menu/pizza-margherita.jpg',
+        photo: pizzaMargherita,
         ingridients: [
             {
                 ingridient: 'Pizza dough',
@@ -33,7 +42,7 @@ export const PIZZAS_LIST = [
     {
         name: 'Pizza Prosciutto',
         price: 5.5,
-        photo: 'src/data/menu/pizza-prosciutto.jpg',
+        photo: pizzaProsciutto,
         ingridients: [
             {
                 ingridient: 'Pizza dough',
@@ -68,7 +77,7 @@ export const PIZZAS_LIST = [
     {
         name: 'Pizza Fungi',
         price: 5.5,
-        photo: 'src/data/menu/pizza-fungi.jpg',
+        photo: pizzaFungi,
         ingridients: [
             {
                 ingridient: 'Pizza dough',
@@ -107,7 +116,7 @@ export const PIZZAS_LIST = [
     {
         name: 'Pizza Figs & Prosciutto',
         price: 6.5,
-        photo: 'src/data/menu/pizza-figs-and-prosciutto.jpg',
+        photo: pizzaFigs,
         ingridients: [
             {
                 ingridient: 'Pizza dough',
@@ -146,7 +155,7 @@ export const PIZZAS_LIST = [
     {
         name: 'Calzone',
         price: 4.0,
-        photo: 'src/data/menu/pizza-calzone.jpg',
+        photo: pizzaCalzone,
         ingridients: [
             {
                 ingridient: 'Pizza dough',
@@ -189,7 +198,7 @@ export const PIZZAS_LIST = [
     {
         name: 'Pizza Asparagus',
         price: 4.0,
-        photo: 'src/data/menu/pizza-asparagus.jpg',
+        photo: pizzaAsparagus,
         ingridients: [
             {
                 ingridient: 'Pizza dough',
@@ -232,7 +241,7 @@ export const PIZZAS_LIST = [
     {
         name: 'Pizza nduja',
         price: 6.5,
-        photo: 'src/data/menu/pizza-nduja.jpg',
+        photo: pizzaNduja,
         ingridients: [
             {
                 ingridient: 'Pizza dough',
@@ -265,7 +274,7 @@ export const PIZZAS_LIST = [
     {
         name: 'Stracietella',
         price: 6.5,
-        photo: 'src/data/menu/pizza-straccietella.jpg',
+        photo: pizzaStracietella,
         ingridients: [
             {
                 ingridient: 'Pizza dough',
