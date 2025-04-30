@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import PostsList from '../features/news/PostsList';
+import PizzaMenu from '../features/menu/PizzaMenu';
 
 const Container = styled.div`
     display: flex;
@@ -14,12 +14,12 @@ const Container = styled.div`
     }
 `;
 
-function MainPage() {
+function Dishes() {
     return (
         <Container>
-            <PostsList />
+            <PizzaMenu />
         </Container>
     );
 }
 
-export default MainPage;
+export default Dishes;

@@ -32,7 +32,7 @@ const HamburgerMenu = styled.div`
 const MobileMenu = styled.div`
     display: ${(props) => (props['data-is-open'] ? 'block' : 'none')};
     position: absolute;
-    top: 3rem;
+    top: 4.5rem;
     right: 1rem;
     background: white;
     padding: 15px;
@@ -80,6 +80,9 @@ function MainNav() {
                     </NavLink>
                     <NavLink to="profile" onClick={() => setIsOpen(false)}>
                         Profile
+                    </NavLink>
+                    <NavLink to="dishes" onClick={() => setIsOpen(false)}>
+                        Dishes
                     </NavLink>
                 </StyledMainNav>
             </MobileMenu>

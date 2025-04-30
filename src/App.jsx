@@ -16,6 +16,7 @@ import { Toaster } from 'react-hot-toast';
 import TablePoductsList from './features/productsOperations/productsData/TablePoductsList';
 import Schedule from './pages/Schedule';
 import MainPage from './pages/MainPage';
+import Dishes from './pages/Dishes';
 
 function App() {
     return (
@@ -55,6 +56,7 @@ function App() {
                                 />
                             </Route>
                             <Route path="main" element={<MainPage />} />
+                            <Route path="dishes" element={<Dishes />} />
                             <Route path="profile" element={<Profile />} />
                             <Route path="schedule" element={<Schedule />} />
                         </Route>
