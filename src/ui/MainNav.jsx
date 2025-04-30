@@ -16,12 +16,35 @@ const HamburgerMenu = styled.div`
     display: flex;
     flex-direction: column;
     gap: 5px;
+    cursor: pointer;
+    position: relative;
+    width: 30px;
+    height: 24px;
 
     div {
-        width: 25px;
-        height: 5px;
+        position: absolute;
+        width: 100%;
+        height: 4px;
         background-color: black;
         border-radius: 2px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    div:nth-child(1) {
+        top: ${(props) => (props['data-is-open'] ? '10px' : '0')};
+        transform: ${(props) =>
+            props['data-is-open'] ? 'rotate(45deg)' : 'rotate(0)'};
+    }
+
+    div:nth-child(2) {
+        top: 10px;
+        opacity: ${(props) => (props['data-is-open'] ? '0' : '1')};
+    }
+
+    div:nth-child(3) {
+        top: ${(props) => (props['data-is-open'] ? '10px' : '20px')};
+        transform: ${(props) =>
+            props['data-is-open'] ? 'rotate(-45deg)' : 'rotate(0)'};
     }
 
     @media (min-width: 768px) {
@@ -30,7 +53,6 @@ const HamburgerMenu = styled.div`
 `;
 
 const MobileMenu = styled.div`
-    display: ${(props) => (props['data-is-open'] ? 'block' : 'none')};
     position: absolute;
     top: 4.5rem;
     right: 1rem;
@@ -39,6 +61,11 @@ const MobileMenu = styled.div`
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     z-index: 99;
+    opacity: ${(props) => (props['data-is-open'] ? 1 : 0)};
+    transform: ${(props) =>
+        props['data-is-open'] ? 'translateY(0)' : 'translateY(-10px)'};
+    pointer-events: ${(props) => (props['data-is-open'] ? 'auto' : 'none')};
+    transition: opacity 0.3s ease, transform 0.3s ease;
 
     nav {
         display: flex;
@@ -59,7 +86,7 @@ function MainNav() {
     };
     return (
         <>
-            <HamburgerMenu onClick={toggleMenu}>
+            <HamburgerMenu onClick={toggleMenu} data-is-open={isOpen}>
                 <div></div>
                 <div></div>
                 <div></div>
