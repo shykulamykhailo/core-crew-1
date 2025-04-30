@@ -8,7 +8,7 @@ const Container = styled.div`
     gap: 50px;
     justify-content: center;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1240px) {
         flex-direction: row;
     }
 `;

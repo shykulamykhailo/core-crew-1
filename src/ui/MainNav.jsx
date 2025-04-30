@@ -102,20 +102,21 @@ function MainNav() {
                     >
                         Management
                     </NavLink>
+                    <NavLink to="dishes" onClick={() => setIsOpen(false)}>
+                        Dishes
+                    </NavLink>
                     <NavLink to="schedule" onClick={() => setIsOpen(false)}>
                         Schedule
                     </NavLink>
                     <NavLink to="profile" onClick={() => setIsOpen(false)}>
                         Profile
                     </NavLink>
-                    <NavLink to="dishes" onClick={() => setIsOpen(false)}>
-                        Dishes
-                    </NavLink>
                 </StyledMainNav>
             </MobileMenu>
             <StyledMainNav>
                 <NavLink to="main">Main</NavLink>
                 <NavLink to="management/products">Management</NavLink>
+                <NavLink to="dishes">Dishes</NavLink>
                 <NavLink to="schedule">Schedule</NavLink>
                 <NavLink to="profile">Profile</NavLink>
             </StyledMainNav>

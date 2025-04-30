@@ -52,12 +52,13 @@ const columns = [
     {
         accessorKey: 'quantity',
         header: 'Quantity',
-        size: 150,
+        size: 100,
         cell: (props) => <p>{props.getValue()}</p>,
     },
     {
         accessorKey: 'unit',
         header: 'Unit',
+        size: 100,
         cell: (props) => <p>{props.getValue()}</p>,
     },
 ];

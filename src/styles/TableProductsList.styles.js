@@ -35,6 +35,10 @@ export const HeaderCell = styled.div`
     min-width: 100px;
     max-width: 400px;
 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
     &:last-child {
         border-right: none;
     }
@@ -73,6 +77,10 @@ export const BodyCell = styled.div`
     width: ${(props) => props.width || 'auto'}px;
     min-width: 100px;
     max-width: 400px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 
     &:last-child {
         border-right: none;
